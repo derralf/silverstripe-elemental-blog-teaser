@@ -1,0 +1,7 @@
+de:
+  Derralf\Elements\ElementBlogTeaser\Element\ElementBlogTeaser:
+    LimitLabel: 'Anzahl der Artikel'
+    FeaturedBlogLabel: 'Filter nach Blog'
+    FeaturedCategoryLabel: 'Filter nach Kategorie'
+    FeaturedCategoryEmptyString: ' -- Kategorie --'
+    RecentPosts: 'Neueste Beiträge'

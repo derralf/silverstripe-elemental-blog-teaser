@@ -1,0 +1,15 @@
+#---
+#Name: elementalblogteaser
+#---
+## add default styles
+#DNADesign\Elemental\Controllers\ElementController:
+#  default_styles:
+#    - derralf/elemental-blog-teaser:client/dist/styles/frontend-default.css
+
+## basic/default config
+#Derralf\Elements\ElementBlogTeaser\Element\ElementBlogTeaser:
+#  styles:
+#    ContainerBreakout: '3 Columns with well and Container-Breakout'
+#    FeaturedBigOtherSmall: '1 big featured Post, others small (with Container-Breakout)'
+#  styles_default_description: 'Standard: 3 columns with isotope-selectors'
+#  readmore_link_class: 'btn btn-primary btn-readmore'

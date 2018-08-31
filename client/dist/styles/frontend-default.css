@@ -1,0 +1,158 @@
+/* ==========================================================================
+   derralf/elemental-textimages
+   ========================================================================== */
+/* ==========================================================================
+   Template Basics
+   ========================================================================== */
+.derralf__elements__elementblogteaser__element__elementblogteaser .isotope-container .isotope-item {
+  margin-bottom: 15px;
+  margin-top: 15px; }
+  .no-js .derralf__elements__elementblogteaser__element__elementblogteaser .isotope-container .isotope-item {
+    display: inline-block;
+    vertical-align: top; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser .card {
+  background: #FFF;
+  position: relative;
+  border: 1px solid #eeeeee; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser .card-title {
+  margin-bottom: 10px;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser .card-block {
+  padding: 30px; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser .img-responsive.forced {
+  width: 100%;
+  height: auto; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser .element__readmorelink {
+  text-align: center;
+  margin-top: 30px; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser .post-date {
+  font-size: 14px;
+  color: #337ab7; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser .element__container-breakout {
+  width: calc(100vw);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: calc(-50vw);
+  margin-right: calc(-50vw); }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser .blog-teaser-well {
+  padding: 30px 0;
+  background: #f6f6f1; }
+
+/* ==========================================================================
+   Template: ElementBlogTeaser_ContainerBreakout.ss
+   ========================================================================== */
+/* ==========================================================================
+   Template: ElementBlogTeaser_FeaturedBigOtherSmall.ss
+   ========================================================================== */
+.derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-well {
+  background: #dddb00; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .featured-post {
+  background: #FFF;
+  margin-top: 30px; }
+  .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .featured-post .content .inner {
+    padding: 30px; }
+  .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .featured-post .image {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .featured-post .image a {
+      display: block;
+      height: 100%; }
+  @media only screen and (min-width: 992px) {
+    .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .featured-post {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      box-direction: reverse;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .featured-post .content,
+      .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .featured-post .image {
+        vertical-align: middle;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+      .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .featured-post .image {
+        height: auto; } }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .recent-posts-container {
+  margin-top: 30px;
+  background: #FFF;
+  padding: 30px 30px 15px 30px; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+  .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list .blog-teaser-flex-list-item {
+    width: 100%;
+    padding: 15px 0; }
+  @media only screen and (min-width: 992px) {
+    .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-left: -15px;
+      margin-right: -15px; }
+      .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list .blog-teaser-flex-list-item {
+        display: block;
+        vertical-align: top;
+        -webkit-box-flex: 50%;
+            -ms-flex: 50%;
+                flex: 50%;
+        padding: 15px; } }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list-item .dt {
+  display: table;
+  width: 100%; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list-item .dtc {
+  display: table-cell;
+  vertical-align: top; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list-item .wi {
+  width: 79px; }
+  .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list-item .wi > a {
+    position: relative; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list-item .wc {
+  line-height: 1.3;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+  .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list-item .wc .date {
+    text-transform: uppercase;
+    color: #337ab7;
+    font-weight: bold; }
+
+.derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list-item .extimg {
+  display: block;
+  width: 64px;
+  height: 64px; }
+  .derralf__elements__elementblogteaser__element__elementblogteaser.featuredbigothersmall .blog-teaser-flex-list-item .extimg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    font-family: 'object-fit: contain;'; }
+
+/*# sourceMappingURL=frontend-default.css.map */

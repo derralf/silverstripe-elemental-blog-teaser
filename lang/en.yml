@@ -1,0 +1,7 @@
+en:
+  Derralf\Elements\ElementBlogTeaser\Element\ElementBlogTeaser:
+    LimitLabel: 'Articles to show'
+    FeaturedBlogLabel: 'Filter by Blog'
+    FeaturedCategoryLabel: 'Filter by Category'
+    FeaturedCategoryEmptyString: ' -- Category --'
+    RecentPosts: 'Latest Posts'

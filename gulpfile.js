@@ -51,9 +51,9 @@ var gulp            =   require('gulp'),
 
 
 var config = {
-    // Production-Mode ?
+    // Production-Mode / Sourcemaps ?
     production: !!util.env.production,
-    sourceMaps: !util.env.production,
+    sourceMaps: !!util.env.sourcemaps,
     // Source Config
     src_images          :    './client/src/images/',                                   // Source Images Directory
     src_javascripts     :    './client/src/js/',                               // Source Javascripts Directory

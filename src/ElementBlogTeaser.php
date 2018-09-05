@@ -132,13 +132,22 @@ class ElementBlogTeaser extends BaseElement
     {
         $posts=null;
         if ($this->BlogID) {
-            if ($this->CategoryID) {
-                $posts = BlogCategory::get()->byID($this->CategoryID)->BlogPosts()->Limit($this->Limit);
+            $blog = Blog::get()->byID($this->BlogID);
+            if ($blog && $this->CategoryID) {
+                $category = BlogCategory::get()->byID($this->CategoryID);
+                if($category) {
+                    $posts = $category->BlogPosts()->Limit($this->Limit);
+                }
             }
-            $posts = Blog::get()->byID($this->BlogID)->getBlogPosts()->Limit($this->Limit);
+            if ($blog) {
+                $posts = $blog->getBlogPosts()->Limit($this->Limit);
+            }
         } else {
             if ($this->CategoryID) {
-                $posts = BlogCategory::get()->byID($this->CategoryID)->BlogPosts()->Limit($this->Limit);
+                $category = BlogCategory::get()->byID($this->CategoryID);
+                if($category) {
+                    $posts = $category->BlogPosts()->Limit($this->Limit);
+                }
             }
             $posts = BlogPost::get()->Limit($this->Limit);
         }

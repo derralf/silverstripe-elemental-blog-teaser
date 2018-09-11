@@ -21,7 +21,7 @@
                     <% end_if %>
                     <div class="content">
                         <div class="inner">
-                            <div class="post-date h3">$PublishDate.Format('y MMMM dd')</div>
+                            <div class="post-date">$PublishDate.Format('y MMMM dd')</div>
                             <h2 class="post-title"><a href="$Link"><% if $MenuTitle %>$MenuTitle<% else %>$Title<% end_if %></a></h2>
                             <div class="post-text"><% if $Summary %>$Summary<% else %><p>$Excerpt</p><% end_if %></div>
                             <a href="$Link" class="btn btn-xs btn-primary btn-readmore">mehr</a>

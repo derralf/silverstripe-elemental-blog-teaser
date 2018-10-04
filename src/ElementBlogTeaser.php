@@ -128,28 +128,28 @@ class ElementBlogTeaser extends BaseElement
     /**
      * @return null|\SilverStripe\ORM\DataList|static
      */
-    public function getBlogPosts()
+    public function BlogPosts($offset=0)
     {
         $posts=null;
+        $offset=(int) $offset;
         if ($this->BlogID) {
             $blog = Blog::get()->byID($this->BlogID);
             if ($blog && $this->CategoryID) {
                 $category = BlogCategory::get()->byID($this->CategoryID);
                 if($category) {
-                    $posts = $category->BlogPosts()->Limit($this->Limit);
+                    $posts = $category->BlogPosts()->limit($this->Limit, $offset);
                 }
-            }
-            if ($blog) {
-                $posts = $blog->getBlogPosts()->Limit($this->Limit);
+            } else if ($blog) {;
+                $posts = $blog->getBlogPosts()->limit($this->Limit, $offset);
             }
         } else {
             if ($this->CategoryID) {
                 $category = BlogCategory::get()->byID($this->CategoryID);
                 if($category) {
-                    $posts = $category->BlogPosts()->Limit($this->Limit);
+                    $posts = $category->BlogPosts()->limit($this->Limit, $offset);
                 }
             }
-            $posts = BlogPost::get()->Limit($this->Limit);
+            $posts = BlogPost::get()->limit($this->Limit, $offset);
         }
 
         // hook: maybe we want to apply additional filters or sort in an extension:

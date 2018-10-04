@@ -32,11 +32,11 @@
             <% end_if %>
 
             <%-- if more than 1 Post available: --%>
-            <% if $BlogPosts.Limit(2) %>
+            <% if $BlogPosts(1) %>
                 <div class="recent-posts-container">
                     <h3><%t Derralf\Elements\ElementBlogTeaser\Element\ElementBlogTeaser.RecentPosts 'Recent Posts'  %></h3>
                     <ul class="blog-teaser-flex-list">
-                        <% loop $BlogPosts.Limit(999,1) %>
+                        <% loop $BlogPosts(1) %>
                             <% include Derralf\\Elements\\ElementBlogTeaser\\FlexListItem %>
                         <% end_loop %>
                     </ul>

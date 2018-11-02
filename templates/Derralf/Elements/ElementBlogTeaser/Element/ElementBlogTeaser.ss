@@ -20,7 +20,7 @@
                             <h2 class="card-title"><a
                                 href="$Link"><% if $MenuTitle %>$MenuTitle<% else %>$Title<% end_if %></a></h2>
                             <div class="card-text"><% if $Summary %>$Summary<% else %><p>$Excerpt</p><% end_if %></div>
-                            <a href="$Link" class="btn btn-xs btn-primary btn-readmore">mehr</a>
+                            <a href="$Link" class="btn btn-xs btn-primary btn-readmore"><%t SilverStripe\\Blog\\Model\\Blog.ReadMoreBtnlabel "read more" %></a>
                         </div>
                     </div>
                 </div>
